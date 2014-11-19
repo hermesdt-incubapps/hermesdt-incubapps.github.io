@@ -1,0 +1,151 @@
+// Custom SCSS for incubapps
+
+.row {
+	max-width: 100%; // Delete padding in rows for mobile
+}
+
+[class*="column"] + [class*="column"].centered:last-child { float: none; }
+
+header {
+	background: url('../images/bg-header.jpg') no-repeat top center;
+	height: 100%;
+	background-size: cover;
+
+	.name {
+		padding: 30px; 
+	}
+
+	h1 {
+		color: white;
+		font-weight: bold;
+		margin-top: 10%;
+	}
+
+	h2 {
+		color: rgba(255,255,255,.7);
+		font-size: 20px;
+	}
+}
+
+h3 {
+	font-weight: bold;
+	line-height: 1;
+	font-size: 30px;
+
+	&.section-title {
+		color: #2a2a2a;
+		text-transform: uppercase;
+		border-left: 3px solid #fb9300;
+		padding-left: 30px; 
+	} 
+}
+
+#about {
+	margin-top: 60px;
+	border-bottom: 1px solid #dfe0e1;
+	min-height: 500px; 
+
+	.name {
+		color: #222;
+		text-transform: uppercase;
+	}
+
+	.job {
+		font-size: 12px;
+	}
+
+	img {
+		margin: 30px 0 10px 0;
+	}
+}
+
+#projects {
+	margin-top: 60px;
+	border-bottom: 1px solid #dfe0e1;
+	min-height: 500px; 
+
+	ul {
+		margin-top: 30px;
+		list-style-type: none; 
+	
+		li {
+			min-height: 140px;
+			
+			p { 
+				font-size: 12px;
+			}
+
+			.sector {
+				font-weight: bold;
+				color: #2a2a2a;
+			}
+
+		}
+
+		img {
+			padding-right: 30px;
+		}
+	}
+}
+
+#colaborations {
+	margin-top: 60px;
+	border-bottom: 1px solid #dfe0e1;
+	min-height: 500px; 
+}
+
+.section-subtitle {
+	font-size: 40px; 
+}
+
+p {
+	color: #888;
+	margin-bottom: 0; 
+}
+
+.top-bar {
+	overflow: hidden;
+	height: 90px;
+	line-height: 60px;
+	position: relative;
+	background: none;
+	margin-bottom: 0;
+}
+
+.top-bar-section ul {
+	padding-top: 10px;
+}
+
+.top-bar-section ul li {
+	background: none;
+}
+
+.top-bar-section ul li > a {
+	display: block;
+	width: 100%;
+	color: white;
+	padding: 12px 0 12px 0;
+	padding-left: 15px;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-size: 0.8125rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.btn) {
+	padding: 0 15px;
+	line-height: 60px;
+	background: none;
+
+	&:hover {
+		background: none;
+		background-color: transparent;
+		color: rgba(255,255,255,0.7);
+	}
+}
+
+
+
+
+
+
