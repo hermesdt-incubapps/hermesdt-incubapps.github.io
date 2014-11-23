@@ -1,14 +1,67 @@
 // Custom SCSS for incubapps
 
+// Color palette
+
+$text: #888;
+$darkText: rgba(255,255,255,.7);
+$brand: rgb(251,147,0);
+$hover: .7;
+
+// Variables
+
+$fontSizeValue: 16;
+$lineHeightValue: 20;
+$lineHeight: 20px;
+
+// Mixins
+
+@mixin fontSize ($font: 16, $lines: 1, $weight: normal, $family: 'Roboto') {
+    font-size: ($font/$fontSizeValue)+rem; /* $font % 16 */
+    line-height: (($lineHeightValue*$lines)/$font)+em; /* (24*$lines) % $font */
+    font-weight: $weight;
+    font-family: $family;
+}
+
+// General styles
+
 .row {
-	max-width: 100%; // Delete padding in rows for mobile
+	max-width: 100%;
 }
 
 [class*="column"] + [class*="column"].centered:last-child { float: none; }
 
+#incubapps { 
+
+	a {
+		color: $brand;
+		text-decoration: none;
+		border-bottom: 2px dotted $brand;
+
+		&:hover {
+			border-bottom: 2px dotted $brand;		
+			color: $brand;
+			opacity: $hover;
+		}
+	}
+}
+
+.top-bar .toggle-topbar.menu-icon {
+	margin-top: 0;
+}
+
+.top-bar.expanded .title-area {
+	background: none;
+}
+
+h4 {
+	margin-top: 30px;
+}
+
+// Header
+
 header {
 	background: url('../images/bg-header.jpg') no-repeat top center;
-	height: 100%;
+	height: 500px;
 	background-size: cover;
 
 	.name {
@@ -22,7 +75,7 @@ header {
 	}
 
 	h2 {
-		color: rgba(255,255,255,.7);
+		color: $darkText;
 		font-size: 20px;
 	}
 }
@@ -41,9 +94,12 @@ h3 {
 }
 
 #about {
-	margin-top: 60px;
+	padding: 60px 0;
 	border-bottom: 1px solid #dfe0e1;
-	min-height: 500px; 
+
+	.team {
+		margin-top: 60px;
+	}
 
 	.name {
 		color: #222;
@@ -65,6 +121,7 @@ h3 {
 	min-height: 500px; 
 
 	ul {
+		padding-top: 60px;
 		margin-top: 30px;
 		list-style-type: none; 
 	
@@ -79,7 +136,6 @@ h3 {
 				font-weight: bold;
 				color: #2a2a2a;
 			}
-
 		}
 
 		img {
@@ -89,17 +145,40 @@ h3 {
 }
 
 #colaborations {
-	margin-top: 60px;
+	padding: 60px 0;
 	border-bottom: 1px solid #dfe0e1;
-	min-height: 500px; 
+
+	.row {
+		margin-bottom: 30px;
+
+	}
+}
+
+#investment {
+	padding: 60px 0;
+	border-bottom: 1px solid #dfe0e1;
+
+	.row {
+		margin-bottom: 30px;
+	}
+}
+
+
+#contact {
+	padding: 60px 0;
+	border-bottom: 1px solid #dfe0e1;
+
+	.contact-form {
+		padding-top: 30px;
+	}
 }
 
 .section-subtitle {
-	font-size: 40px; 
+	@include fontSize (40, 2, normal);
 }
 
 p {
-	color: #888;
+	color: $text;
 	margin-bottom: 0; 
 }
 
