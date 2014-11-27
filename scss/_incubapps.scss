@@ -94,7 +94,7 @@ h3 {
 }
 
 #team {
-	padding: 60px 0;
+	padding: 30px 0;
 	border-bottom: 1px solid #dfe0e1;
 
 	.team {
@@ -116,13 +116,14 @@ h3 {
 }
 
 #whatwedo {
-	padding: 60px 0;
+	padding: 30px 0;
 	border-bottom: 1px solid #dfe0e1;
 	min-height: 500px; 
 }
 
+
 #projects {
-	padding: 60px 0;
+	padding: 30px 0;
 	border-bottom: 1px solid #dfe0e1;
 
 	ul {
@@ -147,10 +148,18 @@ h3 {
 			padding-right: 30px;
 		}
 	}
+
+	.projects-text {
+		margin-top: 10%;
+		
+		p {
+			padding-top: 30px;
+		}
+	}
 }
 
 #colaborations {
-	padding: 60px 0;
+	padding: 30px 0;
 	border-bottom: 1px solid #dfe0e1;
 
 	.row {
@@ -160,7 +169,7 @@ h3 {
 }
 
 #investment {
-	padding: 60px 0;
+	padding: 30px 0;
 	border-bottom: 1px solid #dfe0e1;
 
 	.row {
@@ -170,7 +179,7 @@ h3 {
 
 
 #contact {
-	padding: 60px 0;
+	padding: 30px 0;
 	border-bottom: 1px solid #dfe0e1;
 
 	.contact-form {
@@ -228,7 +237,19 @@ p {
 	}
 }
 
+// Media queries
 
+@media (min-width: 1024px) {
+
+	#projects {
+		padding-bottom: 0;
+	}
+
+	#team, #whatwedo, #colaborations, #investment, #contact {
+		padding: 60px 0;
+	}
+
+}
 
 
 
