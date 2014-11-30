@@ -97,18 +97,30 @@ h3 {
 	padding: 30px 0;
 	border-bottom: 1px solid #dfe0e1;
 
-	.team {
-		margin-top: 60px;
-	}
+	p {
+        @include fontSize (14,1,normal);
+        text-align: left;
+        margin-bottom: 15px;
+      }
 
-	.name {
-		color: #222;
-		text-transform: uppercase;
-	}
+    .name {
+        color: #222;
+        text-transform: uppercase;
+		text-align: center;     
+    }
+ 
+    .job {
+        font-size: 12px;
+		text-align: center;
+    }
 
-	.job {
-		font-size: 12px;
-	}
+    a {
+    	border: 0;
+
+    	&:hover {
+    		border: 0; 
+    	}
+   	}
 
 	img {
 		margin: 30px 0 10px 0;
@@ -119,41 +131,41 @@ h3 {
 	padding: 30px 0;
 	border-bottom: 1px solid #dfe0e1;
 	min-height: 500px; 
+	
+	h4 {
+		@include fontSize (20,1,normal);
+		margin-top: 0;
+	}
+	
 }
 
 
 #projects {
-	padding: 30px 0;
+	padding: 60px 0 30px 0;
 	border-bottom: 1px solid #dfe0e1;
 
 	ul {
-		padding-top: 60px;
 		margin-top: 30px;
 		list-style-type: none; 
 	
 		li {
-			min-height: 140px;
-			
-			p { 
-				font-size: 12px;
-			}
+			display: inline-block;
+			text-align: center;
+			min-width: 110px;
 
-			.sector {
+			p {
 				font-weight: bold;
 				color: #2a2a2a;
+				font-size: 11px;
 			}
 		}
 
-		img {
-			padding-right: 30px;
-		}
 	}
 
 	.projects-text {
-		margin-top: 10%;
 		
 		p {
-			padding-top: 30px;
+			padding-top: 10px;
 		}
 	}
 }
@@ -179,8 +191,7 @@ h3 {
 
 
 #contact {
-	padding: 30px 0;
-	border-bottom: 1px solid #dfe0e1;
+	padding: 30px 0 15px 0;	
 
 	.contact-form {
 		padding-top: 30px;
@@ -237,13 +248,19 @@ p {
 	}
 }
 
+footer {
+	@include fontSize (11,1,normal);
+	padding: 15px 0;
+	background: #f5f5f5;
+	border-top: 1px solid #dfe0e1;
+	color: $text;
+	min-height: 60px;
+	vertical-align: middle;
+}
+
 // Media queries
 
 @media (min-width: 1024px) {
-
-	#projects {
-		padding-bottom: 0;
-	}
 
 	#team, #whatwedo, #colaborations, #investment, #contact {
 		padding: 60px 0;

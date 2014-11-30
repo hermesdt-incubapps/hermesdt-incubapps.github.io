@@ -9137,10 +9137,6 @@ h3.section-title {
   border-bottom: 1px solid #dfe0e1;
 }
 /* line 100, ../scss/_incubapps.scss */
-#team .team {
-  margin-top: 60px;
-}
-/* line 104, ../scss/_incubapps.scss */
 #team p {
   font-size: 0.875rem;
   /* $font % 16 */
@@ -9151,97 +9147,104 @@ h3.section-title {
   text-align: left;
   margin-bottom: 15px;
 }
-/* line 110, ../scss/_incubapps.scss */
+/* line 106, ../scss/_incubapps.scss */
 #team .name {
   color: #222;
   text-transform: uppercase;
   text-align: center;
 }
-/* line 116, ../scss/_incubapps.scss */
+/* line 112, ../scss/_incubapps.scss */
 #team .job {
   font-size: 12px;
   text-align: center;
 }
-/* line 121, ../scss/_incubapps.scss */
+/* line 117, ../scss/_incubapps.scss */
+#team a {
+  border: 0;
+}
+/* line 120, ../scss/_incubapps.scss */
+#team a:hover {
+  border: 0;
+}
+/* line 125, ../scss/_incubapps.scss */
 #team img {
   margin: 30px 0 10px 0;
 }
 
-/* line 126, ../scss/_incubapps.scss */
+/* line 130, ../scss/_incubapps.scss */
 #whatwedo {
   padding: 30px 0;
   border-bottom: 1px solid #dfe0e1;
   min-height: 500px;
 }
+/* line 135, ../scss/_incubapps.scss */
+#whatwedo h4 {
+  font-size: 1.25rem;
+  /* $font % 16 */
+  line-height: 1em;
+  /* (24*$lines) % $font */
+  font-weight: normal;
+  font-family: "Roboto";
+  margin-top: 0;
+}
 
-/* line 133, ../scss/_incubapps.scss */
+/* line 143, ../scss/_incubapps.scss */
 #projects {
-  padding: 30px 0;
+  padding: 60px 0 30px 0;
   border-bottom: 1px solid #dfe0e1;
 }
-/* line 137, ../scss/_incubapps.scss */
+/* line 147, ../scss/_incubapps.scss */
 #projects ul {
-  padding-top: 60px;
   margin-top: 30px;
   list-style-type: none;
 }
-/* line 142, ../scss/_incubapps.scss */
+/* line 151, ../scss/_incubapps.scss */
 #projects ul li {
-  min-height: 140px;
+  display: inline-block;
+  text-align: center;
+  min-width: 110px;
 }
-/* line 145, ../scss/_incubapps.scss */
+/* line 156, ../scss/_incubapps.scss */
 #projects ul li p {
-  font-size: 12px;
-}
-/* line 149, ../scss/_incubapps.scss */
-#projects ul li .sector {
   font-weight: bold;
   color: #2a2a2a;
+  font-size: 11px;
 }
-/* line 155, ../scss/_incubapps.scss */
-#projects ul img {
-  padding-right: 30px;
-}
-/* line 160, ../scss/_incubapps.scss */
-#projects .projects-text {
-  margin-top: 10%;
-}
-/* line 163, ../scss/_incubapps.scss */
+/* line 167, ../scss/_incubapps.scss */
 #projects .projects-text p {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
-/* line 169, ../scss/_incubapps.scss */
+/* line 173, ../scss/_incubapps.scss */
 #colaborations {
   padding: 30px 0;
   border-bottom: 1px solid #dfe0e1;
 }
-/* line 173, ../scss/_incubapps.scss */
+/* line 177, ../scss/_incubapps.scss */
 #colaborations .row {
   margin-bottom: 30px;
 }
 
-/* line 179, ../scss/_incubapps.scss */
+/* line 183, ../scss/_incubapps.scss */
 #investment {
   padding: 30px 0;
   border-bottom: 1px solid #dfe0e1;
 }
-/* line 183, ../scss/_incubapps.scss */
+/* line 187, ../scss/_incubapps.scss */
 #investment .row {
   margin-bottom: 30px;
 }
 
-/* line 189, ../scss/_incubapps.scss */
-#contact {
-  padding: 30px 0;
-  border-bottom: 1px solid #dfe0e1;
-}
 /* line 193, ../scss/_incubapps.scss */
+#contact {
+  padding: 30px 0 15px 0;
+}
+/* line 196, ../scss/_incubapps.scss */
 #contact .contact-form {
   padding-top: 30px;
 }
 
-/* line 198, ../scss/_incubapps.scss */
+/* line 201, ../scss/_incubapps.scss */
 .section-subtitle {
   font-size: 2.5rem;
   /* $font % 16 */
@@ -9251,13 +9254,13 @@ h3.section-title {
   font-family: "Roboto";
 }
 
-/* line 202, ../scss/_incubapps.scss */
+/* line 205, ../scss/_incubapps.scss */
 p {
   color: #888888;
   margin-bottom: 0;
 }
 
-/* line 207, ../scss/_incubapps.scss */
+/* line 210, ../scss/_incubapps.scss */
 .top-bar {
   overflow: hidden;
   height: 90px;
@@ -9267,17 +9270,17 @@ p {
   margin-bottom: 0;
 }
 
-/* line 216, ../scss/_incubapps.scss */
+/* line 219, ../scss/_incubapps.scss */
 .top-bar-section ul {
   padding-top: 10px;
 }
 
-/* line 220, ../scss/_incubapps.scss */
+/* line 223, ../scss/_incubapps.scss */
 .top-bar-section ul li {
   background: none;
 }
 
-/* line 224, ../scss/_incubapps.scss */
+/* line 227, ../scss/_incubapps.scss */
 .top-bar-section ul li > a {
   display: block;
   width: 100%;
@@ -9290,26 +9293,37 @@ p {
   text-transform: uppercase;
 }
 
-/* line 236, ../scss/_incubapps.scss */
+/* line 239, ../scss/_incubapps.scss */
 .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.btn) {
   padding: 0 15px;
   line-height: 60px;
   background: none;
 }
-/* line 241, ../scss/_incubapps.scss */
+/* line 244, ../scss/_incubapps.scss */
 .top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section li:not(.has-form) a:not(.btn):hover {
   background: none;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.7);
 }
 
-@media (min-width: 1024px) {
-  /* line 252, ../scss/_incubapps.scss */
-  #projects {
-    padding-bottom: 0;
-  }
+/* line 251, ../scss/_incubapps.scss */
+footer {
+  font-size: 0.6875rem;
+  /* $font % 16 */
+  line-height: 1.81818em;
+  /* (24*$lines) % $font */
+  font-weight: normal;
+  font-family: "Roboto";
+  padding: 15px 0;
+  background: #f5f5f5;
+  border-top: 1px solid #dfe0e1;
+  color: #888888;
+  min-height: 60px;
+  vertical-align: middle;
+}
 
-  /* line 256, ../scss/_incubapps.scss */
+@media (min-width: 1024px) {
+  /* line 265, ../scss/_incubapps.scss */
   #team, #whatwedo, #colaborations, #investment, #contact {
     padding: 60px 0;
   }
