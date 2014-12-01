@@ -9228,7 +9228,6 @@ h3.section-title {
 /* line 183, ../scss/_incubapps.scss */
 #investment {
   padding: 30px 0;
-  border-bottom: 1px solid #dfe0e1;
 }
 /* line 187, ../scss/_incubapps.scss */
 #investment .row {
@@ -9239,12 +9238,25 @@ h3.section-title {
 #contact {
   padding: 30px 0 15px 0;
 }
-/* line 196, ../scss/_incubapps.scss */
-#contact .contact-form {
-  padding-top: 30px;
+
+/* line 197, ../scss/_incubapps.scss */
+.contact-form {
+  margin: 0 auto;
+  padding: 30px 0;
+  background: #fdfdfd;
+  border-top: 1px solid #f9f9f9;
 }
 
-/* line 201, ../scss/_incubapps.scss */
+/* line 204, ../scss/_incubapps.scss */
+.contact-form-fields {
+  max-width: 500px;
+  background: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin: 0 auto 30px auto;
+  padding: 30px 0 15px 0;
+}
+
+/* line 212, ../scss/_incubapps.scss */
 .section-subtitle {
   font-size: 2.5rem;
   /* $font % 16 */
@@ -9254,13 +9266,13 @@ h3.section-title {
   font-family: "Roboto";
 }
 
-/* line 205, ../scss/_incubapps.scss */
+/* line 216, ../scss/_incubapps.scss */
 p {
   color: #888888;
   margin-bottom: 0;
 }
 
-/* line 210, ../scss/_incubapps.scss */
+/* line 221, ../scss/_incubapps.scss */
 .top-bar {
   overflow: hidden;
   height: 90px;
@@ -9270,17 +9282,17 @@ p {
   margin-bottom: 0;
 }
 
-/* line 219, ../scss/_incubapps.scss */
+/* line 230, ../scss/_incubapps.scss */
 .top-bar-section ul {
   padding-top: 10px;
 }
 
-/* line 223, ../scss/_incubapps.scss */
+/* line 234, ../scss/_incubapps.scss */
 .top-bar-section ul li {
   background: none;
 }
 
-/* line 227, ../scss/_incubapps.scss */
+/* line 238, ../scss/_incubapps.scss */
 .top-bar-section ul li > a {
   display: block;
   width: 100%;
@@ -9293,20 +9305,20 @@ p {
   text-transform: uppercase;
 }
 
-/* line 239, ../scss/_incubapps.scss */
+/* line 250, ../scss/_incubapps.scss */
 .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.btn) {
   padding: 0 15px;
   line-height: 60px;
   background: none;
 }
-/* line 244, ../scss/_incubapps.scss */
+/* line 255, ../scss/_incubapps.scss */
 .top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section li:not(.has-form) a:not(.btn):hover {
   background: none;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 251, ../scss/_incubapps.scss */
+/* line 262, ../scss/_incubapps.scss */
 footer {
   font-size: 0.6875rem;
   /* $font % 16 */
@@ -9323,7 +9335,7 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  /* line 265, ../scss/_incubapps.scss */
+  /* line 276, ../scss/_incubapps.scss */
   #team, #whatwedo, #colaborations, #investment, #contact {
     padding: 60px 0;
   }
