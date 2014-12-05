@@ -4,7 +4,7 @@
 
 $text: #888;
 $darkText: rgba(255,255,255,.7);
-$brand: rgb(251,147,0);
+$brand: rgb(251,147,0); //
 $hover: .7;
 
 // Variables
@@ -64,10 +64,6 @@ header {
 	height: 500px;
 	background-size: cover;
 
-	.name {
-		padding: 30px; 
-	}
-
 	h1 {
 		color: white;
 		font-weight: bold;
@@ -125,6 +121,16 @@ h3 {
 	img {
 		margin: 30px 0 10px 0;
 	}
+
+  ul {
+    list-style-type: none;
+  }
+
+  .know-more {
+    color: $brand;
+    border-bottom: 2px dotted $brand;
+  }
+
 }
 
 #whatwedo {
@@ -197,8 +203,8 @@ h3 {
 .contact-form {
 	margin: 0 auto;
 	padding: 30px 0;
-	background: #fdfdfd;
-	border-top: 1px solid #f9f9f9;	
+	background: #f1f1f1;
+	border-top: 1px solid #dfe0e1;	
 }
 
 .contact-form-fields {
@@ -207,6 +213,7 @@ h3 {
 	box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 	margin: 0 auto 30px auto;
 	padding: 30px 0 15px 0; 
+  border: 1px solid #dfe0e1;
 }
 
 .section-subtitle {
@@ -643,4 +650,14 @@ html, body {
   }
 }
 
-
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.cd-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
