@@ -5,6 +5,7 @@
 $text: #888;
 $darkText: rgba(255,255,255,.7);
 $brand: rgb(251,147,0); //
+$brandDark: #DE4720;
 $hover: .7;
 
 // Variables
@@ -68,6 +69,10 @@ header {
 		color: white;
 		font-weight: bold;
 		margin-top: 10%;
+
+        span {
+            color: $brandDark;
+        }
 	}
 
 	h2 {
@@ -102,7 +107,7 @@ h3 {
     .name {
         color: #222;
         text-transform: uppercase;
-		text-align: center;     
+		    text-align: center;     
     }
  
     .job {
@@ -130,7 +135,6 @@ h3 {
     color: $brand;
     border-bottom: 2px dotted $brand;
   }
-
 }
 
 #whatwedo {
@@ -138,13 +142,17 @@ h3 {
 	border-bottom: 1px solid #dfe0e1;
 	min-height: 500px; 
 	
+
+
 	h4 {
 		@include fontSize (20,1,normal);
 		margin-top: 0;
-	}
-	
-}
 
+        &.section-subtitle {
+            @include fontSize (40, 2, normal);
+        }
+	}
+}
 
 #projects {
 	padding: 60px 0 30px 0;
@@ -225,40 +233,33 @@ p {
 	margin-bottom: 0; 
 }
 
-.top-bar {
-	overflow: hidden;
-	height: 90px;
-	line-height: 60px;
-	position: relative;
-	background: none;
-	margin-bottom: 0;
+.top-bar, .top-bar-section li:not(.has-form) a:not(.button), 
+.top-bar-section li:not(.has-form) a:not(.btn), .top-bar-section ul li {
+    background: none;
 }
 
-.top-bar-section ul {
-	padding-top: 10px;
-}
-
-.top-bar-section ul li {
-	background: none;
+.top-bar-section li:not(.has-form) a:not(.button) {
+    padding: 15px;
 }
 
 .top-bar-section ul li > a {
-	display: block;
-	width: 100%;
-	color: white;
-	padding: 12px 0 12px 0;
-	padding-left: 15px;
-	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-	font-size: 0.8125rem;
-	font-weight: bold;
-	text-transform: uppercase;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.top-bar {
+    height: 90px;
+
+    .name {
+        padding-top: 30px;
+    }
+}
+
+.top-bar-section ul {
+    padding-top: 40px;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.btn) {
-	padding: 0 15px;
-	line-height: 60px;
-	background: none;
-
 	&:hover {
 		background: none;
 		background-color: transparent;
@@ -286,6 +287,19 @@ footer {
 
 }
 
+@media (min-width: 640px) {
+    .top-bar {
+
+        .name {
+            padding-top: 0;
+        }
+    }
+
+    .top-bar-section ul {
+        padding-top: 0;
+    }
+}
+
 // Slide Panel for What We Do section 
 
 *, *::after, *::before {
@@ -296,6 +310,10 @@ footer {
 
 *::after, *::before {
   content: '';
+}
+
+.columns::after, .columns::before {
+  content: none;
 }
 
 html, body {

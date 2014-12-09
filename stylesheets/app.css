@@ -9057,69 +9057,73 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 27, ../scss/_incubapps.scss */
+/* line 28, ../scss/_incubapps.scss */
 .row {
   max-width: 100%;
 }
 
-/* line 31, ../scss/_incubapps.scss */
+/* line 32, ../scss/_incubapps.scss */
 [class*="column"] + [class*="column"].centered:last-child {
   float: none;
 }
 
-/* line 35, ../scss/_incubapps.scss */
+/* line 36, ../scss/_incubapps.scss */
 #incubapps a {
   color: #fb9300;
   text-decoration: none;
   border-bottom: 2px dotted #fb9300;
 }
-/* line 40, ../scss/_incubapps.scss */
+/* line 41, ../scss/_incubapps.scss */
 #incubapps a:hover {
   border-bottom: 2px dotted #fb9300;
   color: #fb9300;
   opacity: 0.7;
 }
 
-/* line 48, ../scss/_incubapps.scss */
+/* line 49, ../scss/_incubapps.scss */
 .top-bar .toggle-topbar.menu-icon {
   margin-top: 0;
 }
 
-/* line 52, ../scss/_incubapps.scss */
+/* line 53, ../scss/_incubapps.scss */
 .top-bar.expanded .title-area {
   background: none;
 }
 
-/* line 56, ../scss/_incubapps.scss */
+/* line 57, ../scss/_incubapps.scss */
 h4 {
   margin-top: 30px;
 }
 
-/* line 62, ../scss/_incubapps.scss */
+/* line 63, ../scss/_incubapps.scss */
 header {
   background: url("../images/bg-header.jpg") no-repeat top center;
   height: 500px;
   background-size: cover;
 }
-/* line 67, ../scss/_incubapps.scss */
+/* line 68, ../scss/_incubapps.scss */
 header h1 {
   color: white;
   font-weight: bold;
   margin-top: 10%;
 }
 /* line 73, ../scss/_incubapps.scss */
+header h1 span {
+  color: #de4720;
+}
+/* line 78, ../scss/_incubapps.scss */
 header h2 {
   color: rgba(255, 255, 255, 0.7);
   font-size: 20px;
 }
 
-/* line 79, ../scss/_incubapps.scss */
+/* line 84, ../scss/_incubapps.scss */
 h3 {
   font-weight: bold;
   line-height: 1;
   font-size: 30px;
 }
-/* line 84, ../scss/_incubapps.scss */
+/* line 89, ../scss/_incubapps.scss */
 h3.section-title {
   color: #2a2a2a;
   text-transform: uppercase;
@@ -9127,12 +9131,12 @@ h3.section-title {
   padding-left: 30px;
 }
 
-/* line 92, ../scss/_incubapps.scss */
+/* line 97, ../scss/_incubapps.scss */
 #team {
   padding: 30px 0;
   border-bottom: 1px solid #dfe0e1;
 }
-/* line 96, ../scss/_incubapps.scss */
+/* line 101, ../scss/_incubapps.scss */
 #team p {
   font-size: 0.875rem;
   /* $font % 16 */
@@ -9143,46 +9147,46 @@ h3.section-title {
   text-align: left;
   margin-bottom: 15px;
 }
-/* line 102, ../scss/_incubapps.scss */
+/* line 107, ../scss/_incubapps.scss */
 #team .name {
   color: #222;
   text-transform: uppercase;
   text-align: center;
 }
-/* line 108, ../scss/_incubapps.scss */
+/* line 113, ../scss/_incubapps.scss */
 #team .job {
   font-size: 12px;
   text-align: center;
 }
-/* line 113, ../scss/_incubapps.scss */
+/* line 118, ../scss/_incubapps.scss */
 #team a {
   border: 0;
 }
-/* line 116, ../scss/_incubapps.scss */
+/* line 121, ../scss/_incubapps.scss */
 #team a:hover {
   border: 0;
 }
-/* line 121, ../scss/_incubapps.scss */
+/* line 126, ../scss/_incubapps.scss */
 #team img {
   margin: 30px 0 10px 0;
 }
-/* line 125, ../scss/_incubapps.scss */
+/* line 130, ../scss/_incubapps.scss */
 #team ul {
   list-style-type: none;
 }
-/* line 129, ../scss/_incubapps.scss */
+/* line 134, ../scss/_incubapps.scss */
 #team .know-more {
   color: #fb9300;
   border-bottom: 2px dotted #fb9300;
 }
 
-/* line 136, ../scss/_incubapps.scss */
+/* line 140, ../scss/_incubapps.scss */
 #whatwedo {
   padding: 30px 0;
   border-bottom: 1px solid #dfe0e1;
   min-height: 500px;
 }
-/* line 141, ../scss/_incubapps.scss */
+/* line 147, ../scss/_incubapps.scss */
 #whatwedo h4 {
   font-size: 1.25rem;
   /* $font % 16 */
@@ -9192,59 +9196,68 @@ h3.section-title {
   font-family: "Roboto";
   margin-top: 0;
 }
+/* line 151, ../scss/_incubapps.scss */
+#whatwedo h4.section-subtitle {
+  font-size: 2.5rem;
+  /* $font % 16 */
+  line-height: 1em;
+  /* (24*$lines) % $font */
+  font-weight: normal;
+  font-family: "Roboto";
+}
 
-/* line 149, ../scss/_incubapps.scss */
+/* line 157, ../scss/_incubapps.scss */
 #projects {
   padding: 60px 0 30px 0;
   border-bottom: 1px solid #dfe0e1;
 }
-/* line 153, ../scss/_incubapps.scss */
+/* line 161, ../scss/_incubapps.scss */
 #projects ul {
   margin-top: 30px;
   list-style-type: none;
 }
-/* line 157, ../scss/_incubapps.scss */
+/* line 165, ../scss/_incubapps.scss */
 #projects ul li {
   display: inline-block;
   text-align: center;
   min-width: 110px;
 }
-/* line 162, ../scss/_incubapps.scss */
+/* line 170, ../scss/_incubapps.scss */
 #projects ul li p {
   font-weight: bold;
   color: #2a2a2a;
   font-size: 11px;
 }
-/* line 173, ../scss/_incubapps.scss */
+/* line 181, ../scss/_incubapps.scss */
 #projects .projects-text p {
   padding-top: 10px;
 }
 
-/* line 179, ../scss/_incubapps.scss */
+/* line 187, ../scss/_incubapps.scss */
 #colaborations {
   padding: 30px 0;
   border-bottom: 1px solid #dfe0e1;
 }
-/* line 183, ../scss/_incubapps.scss */
+/* line 191, ../scss/_incubapps.scss */
 #colaborations .row {
   margin-bottom: 30px;
 }
 
-/* line 189, ../scss/_incubapps.scss */
+/* line 197, ../scss/_incubapps.scss */
 #investment {
   padding: 30px 0;
 }
-/* line 193, ../scss/_incubapps.scss */
+/* line 201, ../scss/_incubapps.scss */
 #investment .row {
   margin-bottom: 30px;
 }
 
-/* line 199, ../scss/_incubapps.scss */
+/* line 207, ../scss/_incubapps.scss */
 #contact {
   padding: 30px 0 15px 0;
 }
 
-/* line 203, ../scss/_incubapps.scss */
+/* line 211, ../scss/_incubapps.scss */
 .contact-form {
   margin: 0 auto;
   padding: 30px 0;
@@ -9252,7 +9265,7 @@ h3.section-title {
   border-top: 1px solid #dfe0e1;
 }
 
-/* line 210, ../scss/_incubapps.scss */
+/* line 218, ../scss/_incubapps.scss */
 .contact-form-fields {
   max-width: 500px;
   background: white;
@@ -9262,7 +9275,7 @@ h3.section-title {
   border: 1px solid #dfe0e1;
 }
 
-/* line 219, ../scss/_incubapps.scss */
+/* line 227, ../scss/_incubapps.scss */
 .section-subtitle {
   font-size: 2.5rem;
   /* $font % 16 */
@@ -9272,59 +9285,51 @@ h3.section-title {
   font-family: "Roboto";
 }
 
-/* line 223, ../scss/_incubapps.scss */
+/* line 231, ../scss/_incubapps.scss */
 p {
   color: #888888;
   margin-bottom: 0;
 }
 
-/* line 228, ../scss/_incubapps.scss */
-.top-bar {
-  overflow: hidden;
-  height: 90px;
-  line-height: 60px;
-  position: relative;
+/* line 236, ../scss/_incubapps.scss */
+.top-bar, .top-bar-section li:not(.has-form) a:not(.button),
+.top-bar-section li:not(.has-form) a:not(.btn), .top-bar-section ul li {
   background: none;
-  margin-bottom: 0;
-}
-
-/* line 237, ../scss/_incubapps.scss */
-.top-bar-section ul {
-  padding-top: 10px;
 }
 
 /* line 241, ../scss/_incubapps.scss */
-.top-bar-section ul li {
-  background: none;
+.top-bar-section li:not(.has-form) a:not(.button) {
+  padding: 15px;
 }
 
 /* line 245, ../scss/_incubapps.scss */
 .top-bar-section ul li > a {
-  display: block;
-  width: 100%;
-  color: white;
-  padding: 12px 0 12px 0;
-  padding-left: 15px;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-size: 0.8125rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-/* line 257, ../scss/_incubapps.scss */
-.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.btn) {
-  padding: 0 15px;
-  line-height: 60px;
-  background: none;
+/* line 250, ../scss/_incubapps.scss */
+.top-bar {
+  height: 90px;
 }
-/* line 262, ../scss/_incubapps.scss */
+/* line 253, ../scss/_incubapps.scss */
+.top-bar .name {
+  padding-top: 30px;
+}
+
+/* line 258, ../scss/_incubapps.scss */
+.top-bar-section ul {
+  padding-top: 40px;
+}
+
+/* line 263, ../scss/_incubapps.scss */
 .top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section li:not(.has-form) a:not(.btn):hover {
   background: none;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 269, ../scss/_incubapps.scss */
+/* line 270, ../scss/_incubapps.scss */
 footer {
   font-size: 0.6875rem;
   /* $font % 16 */
@@ -9341,34 +9346,50 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  /* line 283, ../scss/_incubapps.scss */
+  /* line 284, ../scss/_incubapps.scss */
   #team, #whatwedo, #colaborations, #investment, #contact {
     padding: 60px 0;
   }
 }
-/* line 291, ../scss/_incubapps.scss */
+@media (min-width: 640px) {
+  /* line 293, ../scss/_incubapps.scss */
+  .top-bar .name {
+    padding-top: 0;
+  }
+
+  /* line 298, ../scss/_incubapps.scss */
+  .top-bar-section ul {
+    padding-top: 0;
+  }
+}
+/* line 305, ../scss/_incubapps.scss */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 297, ../scss/_incubapps.scss */
+/* line 311, ../scss/_incubapps.scss */
 *::after, *::before {
   content: '';
 }
 
-/* line 301, ../scss/_incubapps.scss */
+/* line 315, ../scss/_incubapps.scss */
+.columns::after, .columns::before {
+  content: none;
+}
+
+/* line 319, ../scss/_incubapps.scss */
 html, body {
   height: 100%;
 }
 
-/* line 305, ../scss/_incubapps.scss */
+/* line 323, ../scss/_incubapps.scss */
 .cd-main-content {
   text-align: center;
 }
 
-/* line 308, ../scss/_incubapps.scss */
+/* line 326, ../scss/_incubapps.scss */
 .cd-main-content h1 {
   font-size: 20px;
   font-size: 1.25rem;
@@ -9376,7 +9397,7 @@ html, body {
   padding: 4em 0;
 }
 
-/* line 314, ../scss/_incubapps.scss */
+/* line 332, ../scss/_incubapps.scss */
 .cd-main-content .cd-btn {
   position: relative;
   display: inline-block;
@@ -9393,19 +9414,19 @@ html, body {
   transition: all 0.2s;
 }
 
-/* line 329, ../scss/_incubapps.scss */
+/* line 347, ../scss/_incubapps.scss */
 .no-touch .cd-main-content .cd-btn:hover {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 @media only screen and (min-width: 1170px) {
-  /* line 333, ../scss/_incubapps.scss */
+  /* line 351, ../scss/_incubapps.scss */
   .cd-main-content h1 {
     font-size: 32px;
     font-size: 2rem;
   }
 }
-/* line 339, ../scss/_incubapps.scss */
+/* line 357, ../scss/_incubapps.scss */
 .cd-panel, .cd-panel-2, .cd-panel-3, .cd-panel-4 {
   position: fixed;
   top: 0;
@@ -9418,7 +9439,7 @@ html, body {
   transition: visibility 0s 0.6s;
 }
 
-/* line 354, ../scss/_incubapps.scss */
+/* line 372, ../scss/_incubapps.scss */
 .cd-panel::after, .cd-panel-2::after, .cd-panel-3::after, .cd-panel-4::after {
   /* overlay layer */
   position: absolute;
@@ -9433,7 +9454,7 @@ html, body {
   transition: background 0.3s 0.3s;
 }
 
-/* line 367, ../scss/_incubapps.scss */
+/* line 385, ../scss/_incubapps.scss */
 .cd-panel.is-visible, .is-visible.cd-panel-2, .is-visible.cd-panel-3, .is-visible.cd-panel-4 {
   visibility: visible;
   -webkit-transition: visibility 0s 0s;
@@ -9441,7 +9462,7 @@ html, body {
   transition: visibility 0s 0s;
 }
 
-/* line 373, ../scss/_incubapps.scss */
+/* line 391, ../scss/_incubapps.scss */
 .cd-panel.is-visible::after, .is-visible.cd-panel-2::after, .is-visible.cd-panel-3::after, .is-visible.cd-panel-4::after {
   background: rgba(0, 0, 0, 0.6);
   -webkit-transition: background 0.3s 0s;
@@ -9449,14 +9470,14 @@ html, body {
   transition: background 0.3s 0s;
 }
 
-/* line 379, ../scss/_incubapps.scss */
+/* line 397, ../scss/_incubapps.scss */
 .cd-panel.is-visible .cd-panel-close::before, .is-visible.cd-panel-2 .cd-panel-close::before, .is-visible.cd-panel-3 .cd-panel-close::before, .is-visible.cd-panel-4 .cd-panel-close::before {
   -webkit-animation: cd-close-1 0.6s 0.3s;
   -moz-animation: cd-close-1 0.6s 0.3s;
   animation: cd-close-1 0.6s 0.3s;
 }
 
-/* line 384, ../scss/_incubapps.scss */
+/* line 402, ../scss/_incubapps.scss */
 .cd-panel.is-visible .cd-panel-close::after, .is-visible.cd-panel-2 .cd-panel-close::after, .is-visible.cd-panel-3 .cd-panel-close::after, .is-visible.cd-panel-4 .cd-panel-close::after {
   -webkit-animation: cd-close-2 0.6s 0.3s;
   -moz-animation: cd-close-2 0.6s 0.3s;
@@ -9464,29 +9485,29 @@ html, body {
 }
 
 @-webkit-keyframes cd-close-1 {
-  /* line 391, ../scss/_incubapps.scss */
+  /* line 409, ../scss/_incubapps.scss */
   0%, 50% {
     -webkit-transform: rotate(0);
   }
 
-  /* line 394, ../scss/_incubapps.scss */
+  /* line 412, ../scss/_incubapps.scss */
   100% {
     -webkit-transform: rotate(45deg);
   }
 }
 @-moz-keyframes cd-close-1 {
-  /* line 399, ../scss/_incubapps.scss */
+  /* line 417, ../scss/_incubapps.scss */
   0%, 50% {
     -moz-transform: rotate(0);
   }
 
-  /* line 402, ../scss/_incubapps.scss */
+  /* line 420, ../scss/_incubapps.scss */
   100% {
     -moz-transform: rotate(45deg);
   }
 }
 @keyframes cd-close-1 {
-  /* line 407, ../scss/_incubapps.scss */
+  /* line 425, ../scss/_incubapps.scss */
   0%, 50% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -9495,7 +9516,7 @@ html, body {
     transform: rotate(0);
   }
 
-  /* line 414, ../scss/_incubapps.scss */
+  /* line 432, ../scss/_incubapps.scss */
   100% {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -9505,29 +9526,29 @@ html, body {
   }
 }
 @-webkit-keyframes cd-close-2 {
-  /* line 423, ../scss/_incubapps.scss */
+  /* line 441, ../scss/_incubapps.scss */
   0%, 50% {
     -webkit-transform: rotate(0);
   }
 
-  /* line 426, ../scss/_incubapps.scss */
+  /* line 444, ../scss/_incubapps.scss */
   100% {
     -webkit-transform: rotate(-45deg);
   }
 }
 @-moz-keyframes cd-close-2 {
-  /* line 431, ../scss/_incubapps.scss */
+  /* line 449, ../scss/_incubapps.scss */
   0%, 50% {
     -moz-transform: rotate(0);
   }
 
-  /* line 434, ../scss/_incubapps.scss */
+  /* line 452, ../scss/_incubapps.scss */
   100% {
     -moz-transform: rotate(-45deg);
   }
 }
 @keyframes cd-close-2 {
-  /* line 439, ../scss/_incubapps.scss */
+  /* line 457, ../scss/_incubapps.scss */
   0%, 50% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -9536,7 +9557,7 @@ html, body {
     transform: rotate(0);
   }
 
-  /* line 446, ../scss/_incubapps.scss */
+  /* line 464, ../scss/_incubapps.scss */
   100% {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -9545,7 +9566,7 @@ html, body {
     transform: rotate(-45deg);
   }
 }
-/* line 454, ../scss/_incubapps.scss */
+/* line 472, ../scss/_incubapps.scss */
 .cd-panel-header {
   position: fixed;
   width: 90%;
@@ -9558,7 +9579,7 @@ html, body {
   -moz-transition: top 0.3s 0s;
   transition: top 0.3s 0s;
 }
-/* line 466, ../scss/_incubapps.scss */
+/* line 484, ../scss/_incubapps.scss */
 .cd-panel-header h1 {
   font-size: 1.25rem;
   /* $font % 16 */
@@ -9571,22 +9592,22 @@ html, body {
   margin-top: 15px;
 }
 
-/* line 474, ../scss/_incubapps.scss */
+/* line 492, ../scss/_incubapps.scss */
 .from-right .cd-panel-header, .from-left .cd-panel-header {
   top: -50px;
 }
 
-/* line 477, ../scss/_incubapps.scss */
+/* line 495, ../scss/_incubapps.scss */
 .from-right .cd-panel-header {
   right: 0;
 }
 
-/* line 480, ../scss/_incubapps.scss */
+/* line 498, ../scss/_incubapps.scss */
 .from-left .cd-panel-header {
   left: 0;
 }
 
-/* line 483, ../scss/_incubapps.scss */
+/* line 501, ../scss/_incubapps.scss */
 .is-visible .cd-panel-header {
   top: 0;
   -webkit-transition: top 0.3s 0.3s;
@@ -9595,18 +9616,18 @@ html, body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 490, ../scss/_incubapps.scss */
+  /* line 508, ../scss/_incubapps.scss */
   .cd-panel-header {
     width: 70%;
   }
 }
 @media only screen and (min-width: 1170px) {
-  /* line 495, ../scss/_incubapps.scss */
+  /* line 513, ../scss/_incubapps.scss */
   .cd-panel-header {
     width: 50%;
   }
 }
-/* line 500, ../scss/_incubapps.scss */
+/* line 518, ../scss/_incubapps.scss */
 .cd-panel-close {
   position: absolute;
   top: 0;
@@ -9620,7 +9641,7 @@ html, body {
   white-space: nowrap;
 }
 
-/* line 512, ../scss/_incubapps.scss */
+/* line 530, ../scss/_incubapps.scss */
 .cd-panel-close::before, .cd-panel-close::after {
   /* close icon created in CSS */
   position: absolute;
@@ -9634,7 +9655,7 @@ html, body {
   backface-visibility: hidden;
 }
 
-/* line 524, ../scss/_incubapps.scss */
+/* line 542, ../scss/_incubapps.scss */
 .cd-panel-close::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -9643,7 +9664,7 @@ html, body {
   transform: rotate(45deg);
 }
 
-/* line 531, ../scss/_incubapps.scss */
+/* line 549, ../scss/_incubapps.scss */
 .cd-panel-close::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -9652,12 +9673,12 @@ html, body {
   transform: rotate(-45deg);
 }
 
-/* line 538, ../scss/_incubapps.scss */
+/* line 556, ../scss/_incubapps.scss */
 .no-touch .cd-panel-close:hover {
   background-color: #424f5c;
 }
 
-/* line 541, ../scss/_incubapps.scss */
+/* line 559, ../scss/_incubapps.scss */
 .no-touch .cd-panel-close:hover::before, .no-touch .cd-panel-close:hover::after {
   background-color: #ffffff;
   -webkit-transition-property: -webkit-transform;
@@ -9668,7 +9689,7 @@ html, body {
   transition-duration: 0.3s;
 }
 
-/* line 550, ../scss/_incubapps.scss */
+/* line 568, ../scss/_incubapps.scss */
 .no-touch .cd-panel-close:hover::before {
   -webkit-transform: rotate(220deg);
   -moz-transform: rotate(220deg);
@@ -9677,7 +9698,7 @@ html, body {
   transform: rotate(220deg);
 }
 
-/* line 557, ../scss/_incubapps.scss */
+/* line 575, ../scss/_incubapps.scss */
 .no-touch .cd-panel-close:hover::after {
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -9686,7 +9707,7 @@ html, body {
   transform: rotate(135deg);
 }
 
-/* line 565, ../scss/_incubapps.scss */
+/* line 583, ../scss/_incubapps.scss */
 .cd-panel-container {
   position: fixed;
   width: 90%;
@@ -9705,7 +9726,7 @@ html, body {
   transition-delay: 0.3s;
 }
 
-/* line 582, ../scss/_incubapps.scss */
+/* line 600, ../scss/_incubapps.scss */
 .from-right .cd-panel-container {
   right: 0;
   -webkit-transform: translate3d(100%, 0, 0);
@@ -9715,7 +9736,7 @@ html, body {
   transform: translate3d(100%, 0, 0);
 }
 
-/* line 590, ../scss/_incubapps.scss */
+/* line 608, ../scss/_incubapps.scss */
 .from-left .cd-panel-container {
   left: 0;
   -webkit-transform: translate3d(-100%, 0, 0);
@@ -9725,7 +9746,7 @@ html, body {
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 598, ../scss/_incubapps.scss */
+/* line 616, ../scss/_incubapps.scss */
 .is-visible .cd-panel-container {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -9738,18 +9759,18 @@ html, body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 609, ../scss/_incubapps.scss */
+  /* line 627, ../scss/_incubapps.scss */
   .cd-panel-container {
     width: 70%;
   }
 }
 @media only screen and (min-width: 1170px) {
-  /* line 614, ../scss/_incubapps.scss */
+  /* line 632, ../scss/_incubapps.scss */
   .cd-panel-container {
     width: 50%;
   }
 }
-/* line 619, ../scss/_incubapps.scss */
+/* line 637, ../scss/_incubapps.scss */
 .cd-panel-content {
   position: absolute;
   top: 0;
@@ -9762,7 +9783,7 @@ html, body {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 630, ../scss/_incubapps.scss */
+/* line 648, ../scss/_incubapps.scss */
 .cd-panel-content p {
   font-size: 14px;
   font-size: 0.875rem;
@@ -9771,25 +9792,25 @@ html, body {
   margin: 2em 0;
 }
 
-/* line 638, ../scss/_incubapps.scss */
+/* line 656, ../scss/_incubapps.scss */
 .cd-panel-content {
   color: #424f5c;
 }
 
-/* line 642, ../scss/_incubapps.scss */
+/* line 660, ../scss/_incubapps.scss */
 .cd-panel-content p:first-of-type {
   margin-top: 0;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 646, ../scss/_incubapps.scss */
+  /* line 664, ../scss/_incubapps.scss */
   .cd-panel-content p {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.6;
   }
 }
-/* line 653, ../scss/_incubapps.scss */
+/* line 671, ../scss/_incubapps.scss */
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
@@ -9797,7 +9818,7 @@ html, body {
   margin: 0 auto;
 }
 
-/* line 659, ../scss/_incubapps.scss */
+/* line 677, ../scss/_incubapps.scss */
 .cd-container:after {
   content: "";
   display: table;
